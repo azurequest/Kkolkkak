@@ -1,0 +1,23 @@
+name: kkolkkak
+description: "꼴깍: 약과 영양제 복용을 가볍게 챙기는 Flutter MVP."
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_local_notifications: ^18.0.1
+  shared_preferences: ^2.3.5
+  timezone: ^0.10.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
