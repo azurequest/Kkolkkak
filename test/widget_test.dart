@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:kkolkkak/main.dart';
+import 'package:kkolttak/main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
@@ -9,10 +9,10 @@ void main() {
     final notifications = NotificationService();
 
     await tester.pumpWidget(
-      KkolkkakApp(store: store, notifications: notifications),
+      KkolttakApp(store: store, notifications: notifications),
     );
 
-    expect(find.text('Kkolkkak'), findsOneWidget);
-    expect(find.text('오늘 꼴깍할 것'), findsOneWidget);
+    expect(find.text('KKOLTTAK'), findsOneWidget);
+    expect(find.text('오늘 꼴딱할 것'), findsOneWidget);
   });
 }

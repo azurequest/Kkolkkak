@@ -12,11 +12,11 @@ void main() async {
   final notifications = NotificationService();
   await notifications.initialize();
   final store = SupplementStore(await SharedPreferences.getInstance());
-  runApp(KkolkkakApp(store: store, notifications: notifications));
+  runApp(KkolttakApp(store: store, notifications: notifications));
 }
 
-class KkolkkakApp extends StatelessWidget {
-  const KkolkkakApp({
+class KkolttakApp extends StatelessWidget {
+  const KkolttakApp({
     required this.store,
     required this.notifications,
     super.key,
@@ -28,7 +28,7 @@ class KkolkkakApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Kkolkkak',
+      title: 'KKOLTTAK',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
@@ -279,7 +279,7 @@ class NotificationService {
     for (final weekday in item.activeWeekdays) {
       await _plugin.zonedSchedule(
         item.id * 10 + weekday,
-        '꼴깍할 시간이에요',
+        '꼴딱할 시간이에요',
         '${item.name} ${item.dose} 챙길 차례입니다.',
         _nextWeekdayTime(
           weekday: weekday,
@@ -396,7 +396,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Kkolkkak'),
+        title: const Text('KKOLTTAK'),
         centerTitle: false,
         backgroundColor: const Color(0xFFF7F4EE),
         actions: [
@@ -513,7 +513,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               const SizedBox(height: 8),
               Text(
-                '꼴깍 체크인은 약효보다 내 몸의 반응 패턴을 모으는 기능이에요.',
+                '꼴딱 체크인은 약효보다 내 몸의 반응 패턴을 모으는 기능이에요.',
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(height: 16),
@@ -786,7 +786,7 @@ class _TodayView extends StatelessWidget {
         ),
         const SizedBox(height: 20),
         Text(
-          '오늘 꼴깍할 것',
+          '오늘 꼴딱할 것',
           style: Theme.of(
             context,
           ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),

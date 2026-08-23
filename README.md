@@ -1,4 +1,4 @@
-# Kkolkkak
+# KKOLTTAK
 
 약과 영양제 복용 시간, 남은 알약 수, 재구매 타이밍을 한 화면에서 챙기는 Flutter MVP입니다.
 

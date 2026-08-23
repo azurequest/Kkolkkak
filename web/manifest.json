@@ -1,11 +1,11 @@
 {
-    "name": "Kkolkkak",
-    "short_name": "Kkolkkak",
+    "name": "KKOLTTAK",
+    "short_name": "KKOLTTAK",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Kkolkkak helps you track medicines, supplements, refill timing, and how your body feels.",
+    "description": "KKOLTTAK helps you track medicines, supplements, refill timing, and how your body feels.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
